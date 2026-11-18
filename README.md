@@ -5,7 +5,7 @@ Este projeto foi desenvolvido como parte do desafio de Machine Learning da DIO (
 ## 📌 O Problema
 O grande desafio deste dataset não é a complexidade das variáveis, mas sim o **desbalanceamento extremo** dos dados: apenas **0,17%** das transações são fraudes. 
 
-Por isso, a métrica de acurácia é inútil aqui (um modelo "burro" que diz que todas as transações são normais acertaria 99,83% das vezes). O foco da avaliação foi direcionado para o **Recall, Precisão e F1-Score** da classe de fraude (classe 1), além da curva Precision-Recall (PR AUC).
+Por isso, a métrica de acurácia é inútil aqui (um modelo que diz que todas as transações são normais acertaria 99,83% das vezes). O foco da avaliação foi direcionado para o **Recall, Precisão e F1-Score** da classe de fraude (classe 1), além da curva Precision-Recall (PR AUC).
 
 ## 🛠️ Preparação dos Dados
 - **Dataset**: O arquivo foi carregado diretamente via URL (`https://storage.googleapis.com/download.tensorflow.org/data/creditcard.csv`), respeitando o limite de 100 MB do GitHub sem precisar subir o arquivo para o repositório.
@@ -39,4 +39,5 @@ O **XGBoost** apresentou o melhor equilíbrio geral (F1-Score e PR AUC), sendo e
 - [Dataset original](https://storage.googleapis.com/download.tensorflow.org/data/creditcard.csv)
 
 ---
+
 *Projeto desenvolvido por Lucas Lima como parte do curso de Dados com Python e IA - Santander Open Academy.*
