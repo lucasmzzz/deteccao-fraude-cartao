@@ -25,7 +25,10 @@ O **XGBoost** apresentou o melhor equilíbrio geral (F1-Score e PR AUC), sendo e
 
 ## ⚙️ Ajuste de Limiar (Threshold) e SHAP
 - **Ajuste de Limiar**: O limiar padrão de 0.5 foi reduzido para **0.3** no XGBoost. Com isso, conseguimos manter um Recall de 0.78 e uma Precisão de 0.87, demonstrando como o ajuste fino do threshold pode ser calibrado para o risco de negócio (priorizando não deixar passar fraudes).
-- **Explicabilidade com SHAP**: Para entender o que o modelo aprendeu, foi utilizado o `TreeExplainer` do SHAP. O *Summary Plot* (gerado no notebook) revela quais variáveis tiveram o maior impacto na decisão do modelo, destacando a importância de features como `V14`, `V4` e `V12` para a detecção das anomalias.
+- **Explicabilidade com SHAP**: Para entender o que o modelo aprendeu, foi utilizado o `TreeExplainer` do SHAP. O gráfico abaixo mostra o *Summary Plot*, revelando quais variáveis tiveram o maior impacto na decisão do modelo, destacando a importância de features como `V14`, `V4` e `V12` para a detecção das anomalias.
+
+![SHAP Summary Plot](./shap_summary.png)
+*(Nota: substitua "shap_summary.png" pelo nome exato do arquivo de imagem que você subiu no repositório)*
 
 ## 🔄 O que mudei em relação à Expert (Diferenciais)
 - **Ajuste de Threshold**: Fui além do padrão de 0.5 e testei o limiar de 0.3 para demonstrar na prática o *trade-off* entre Precisão e Recall no contexto de fraudes.
